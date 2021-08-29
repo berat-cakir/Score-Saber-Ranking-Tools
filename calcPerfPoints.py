@@ -15,7 +15,7 @@ while repeat:
         totalScore += weightDecay**(i - 1) * averageScore
         print(f"{i}. {totalScore:3.2f}pp")
     
-    print(f"\nYour expected total performance points after playing {int(numberOfPlays)} songs equals {totalScore:3.2f}pp with a weight decay of {weightDecay}")
+    print(f"\nYour expected total performance points after playing {int(numberOfPlays)} songs equals {totalScore:3.2f}pp ({averageScore:3.2f}pp on average) with a weight decay of {weightDecay}")
     if str(input("\nPress ENTER to exit or R to start over: ")).upper() != "R":
         repeat = False
     else:
